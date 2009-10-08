@@ -1,0 +1,25 @@
+.LoginWidget{
+	padding:0.5em;	
+}
+
+.LoginWidget *{
+	float:none !important;
+	font-size:1em !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.LoginWidget input.text,
+.LoginWidget textarea, 
+.LoginWidget select {
+	width:100%;
+		margin-bottom:5px !important;
+}
+
+.LoginWidget p{
+	margin-bottom: 5px !important;
+}
+
+.LoginWidget #Remember *{
+	display:inline !important;
+}
