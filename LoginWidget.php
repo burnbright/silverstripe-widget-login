@@ -16,13 +16,32 @@ class LoginWidget extends Widget {
 	}
 	
 	function Title(){
-		return ($this->LoggedIn()) ? "Logged in": "Login";
+		return ($this->LoggedIn()) ? "Logged In": "Login";
 	}
 	
 	function Member(){
 		return Member::currentMember();
 	}
+	
+	function LoginForm(){
+		$controller = new LoginWidget_Controller($this);
+		return $controller->LoginForm();
+	}
 
+}
+
+class LoginWidget_Controller extends Controller{
+	
+	function LoginForm(){
+		$form = new MemberLoginForm($this,'LoginForm');
+		return $form;
+	}
+	
+	function Link() {
+		return $this->class;
+	}
+	
+	
 }
 
 ?>
