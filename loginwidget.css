@@ -17,3 +17,6 @@
 .LoginWidget #Remember *{
 	display:inline !important;
 }
+
+.LoginWidget legend{display:none;}
+.LoginWidget label{display:none;}
