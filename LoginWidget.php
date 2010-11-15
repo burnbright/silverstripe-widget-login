@@ -25,7 +25,9 @@ class LoginWidget extends Widget {
 	
 	function LoginForm(){
 		$controller = new LoginWidget_Controller($this);
-		return $controller->LoginForm();
+		$form =  $controller->LoginForm();
+		$this->extend('updateLoginForm',&$form);
+		return $form;
 	}
 
 }
