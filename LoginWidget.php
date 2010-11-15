@@ -34,6 +34,17 @@ class LoginWidget_Controller extends Controller{
 	
 	function LoginForm(){
 		$form = new MemberLoginForm($this,'LoginForm');
+		$form->Fields()->removeByName('Remember');
+		$form->Fields()->fieldByName('Password')->setTitle('Your password');
+		$form->Fields()->fieldByName('Email')->setTitle('Your email');
+		$form->setActions(new FieldSet(
+					new FormAction('dologin', _t('Member.BUTTONLOGIN', "Log in")),
+					new LiteralField(
+						'forgotPassword',
+						'<p id="ForgotPassword">' .
+						'<a href="Security/lostpassword">REGISTER</a> | ' .
+						'<a href="Security/lostpassword">' . _t('Member.BUTTONLOSTPASSWORD', "I've lost my password") . '</a></p>'
+					)));
 		return $form;
 	}
 	
