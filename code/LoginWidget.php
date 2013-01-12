@@ -41,14 +41,14 @@ class LoginWidget extends Widget {
 
 }
 
-class LoginWidget_Controller extends Controller {
+class LoginWidget_Controller extends Widget_Controller {
 
     function LoginForm() {
         $form = new MemberLoginForm($this, 'LoginForm');
         return $form;
     }
 
-    function Link() {
+    function Link($action = null) {
         return $this->class;
     }
 
