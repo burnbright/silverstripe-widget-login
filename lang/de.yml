@@ -1,0 +1,7 @@
+de:
+  LoginWidget:
+    DESCRIPTION: 'Zeigt die Login Form. Ist der User eingeloggt, werden Name und letzter Login angezeigt.'
+    LOGGEDIN: Angemeldet
+    LOGIN: Anmelden
+    LOGOUT: Abmelden
+    LASTVISIT: Letzter Besuch

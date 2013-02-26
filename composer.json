@@ -1,0 +1,11 @@
+{
+	"name": "silverstripe/widget-login",
+	"description": "Login box widget.",
+	"type": "silverstripe-widget",
+	"keywords": ["silverstripe", "widgets", "blog"],
+	"require":
+	{
+		"silverstripe/framework": "3.*",
+		"silverstripe/widgets": "dev-master"
+	}
+}
