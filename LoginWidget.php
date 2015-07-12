@@ -26,7 +26,7 @@ class LoginWidget extends Widget {
 	function LoginForm(){
 		$controller = new LoginWidget_Controller($this);
 		$form =  $controller->LoginForm();
-		$this->extend('updateLoginForm',&$form);
+		$this->extend('updateLoginForm', $form);
 		return $form;
 	}
 
@@ -45,5 +45,3 @@ class LoginWidget_Controller extends Controller{
 	
 	
 }
-
-?>
